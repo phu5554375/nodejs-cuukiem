@@ -1,0 +1,71 @@
+/*
+ * Template Name: Default Theme for iShopGo
+ * URL: ishopgo.com
+ * Time: Jan 2017
+ * Author: Hiep Ta
+ * Author Email: hieptq11@gmail.com
+ */
+
+
+// ====
+// Main File
+// ====
+
+
+// --
+// compass
+@import "compass/css3";
+
+
+// --
+// other libs
+@import "libs/material-colors/sass-material-colors";
+@import 'libs/material-colors/sass-material-colors-classes';
+
+
+// --
+// base
+@import "base/variables";
+@import "base/mixins";
+@import "base/base";
+
+
+// --
+// classes
+@import "classes/default-classes";
+@import "classes/element-classes";
+
+
+// --
+// custom
+
+// bootstrap
+@import "custom/bootstrap/type";
+@import "custom/bootstrap/tables";
+@import "custom/bootstrap/pagination";
+@import "custom/bootstrap/buttons";
+@import "custom/bootstrap/forms";
+@import "custom/bootstrap/modal";
+@import "custom/bootstrap/dropdown";
+// more
+@import "custom/select2";
+@import "custom/datepicker";
+@import "custom/touchspin";
+@import "custom/slick";
+
+
+// --
+// layouts
+@import "header";
+@import "footer";
+@import "layouts";
+@import "components";
+@import "cards";
+@import "sections";
+@import "comments";
+@import "feedback";
+@import "home";
+@import "q&a";
+// @import "";
+
+

@@ -1,0 +1,20 @@
+// ====
+// Layouts
+// ====
+
+#siteContainer{
+	position: relative;
+}
+#siteContent{
+	position: relative;
+	min-height: calc(100vh - 412px);
+}
+.container{
+	padding-left: 12px;
+	padding-right: 12px;
+	&.has-mw-on-xs-screen{
+		@media (max-width: $screen-xs-max){
+			max-width: 480px !important;
+		}
+	}
+}

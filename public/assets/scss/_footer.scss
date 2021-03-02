@@ -1,0 +1,278 @@
+// ====
+// Footer
+// ====
+
+.site-footer{
+	margin: 24px 0 0;
+	.site-footer_main-content{
+		padding: 24px 0;
+		text-align: center;
+		background-color: #fff;
+		@media (min-width: $screen-md-min){
+			text-align: left;
+		}
+		.footer-about-company{
+			padding: 8px 0;
+			.company-title{
+				margin: 0 0 8px;
+				padding: 0;
+				line-height: 24px;
+				font-size: 18px;
+				color: $grey900;
+			}
+			.company-info{
+				line-height: 16px;
+				font-size: 12px;
+				color: $grey700;
+				p{
+					margin-bottom: 6px;
+					&:last-child{
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.footer-menu{
+			padding: 10px 0;
+			.footer-menu_title{
+				margin: 0 0 5px;
+				line-height: 16px;
+				font-size: 11px;
+				font-weight: 700;
+				color: $grey600;
+				@media (min-width: $screen-md-min){
+					margin: 0 0 12px;
+				}
+			}
+			ul.footer-menu_list{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+				&.footer-menu_list-inline{
+					li{
+						display: inline-block;
+					}
+				}
+				li{
+					a:not([class^="btn"]){
+						display: inline-block;
+						padding: 3px 0;
+						line-height: 16px;
+						font-size: 12px;
+						color: $grey700;
+						@media (min-width: $screen-md-min){
+							padding: 3px 0;
+						}
+						&:hover, &:focus, &:active, &:visited{
+				      text-decoration: none;
+				    }
+						&:hover{
+							color: $grey500;
+						}
+					}
+				}
+			}
+		}
+	}
+	.site-footer_copyright{
+		text-align: center;
+		background-color: $grey50;
+		border-top: 1px solid #f5f5f5;
+		.footer-copyright-content{
+			padding: 8px 0;
+			line-height: 15px;
+			font-size: 11px;
+			color: $grey600;
+		}
+	}
+}
+.site-footer{
+	margin-top: 24px;
+	.site-footer_single-nav{
+		margin: 0;
+		padding: 16px 0;
+		text-align: center;
+		@media (min-width: $screen-sm-min){
+			padding: 0px 0;
+			text-align: left;
+		}
+		.nav-title{
+			margin: 0;
+			line-height: 16px;
+			font-size: 11px;
+			font-weight: 600;
+			color: material-color('green','500');
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+		ul.nav-list{
+			margin-top: 12px;
+			li{
+				margin: 0 0 5px;
+				line-height: 16px;
+				&:last-child{
+					margin: 0;
+				}
+				a{
+					display: inline-block;
+					vertical-align: top;
+					line-height: 16px;
+					font-size: 12px;
+					color: $grey700;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+		ul.nav-icon-list{
+			margin-top: 12px;
+			cursor: default;
+			li{
+				margin-right: 4px;
+				display: inline-block;
+				a{
+					display: block;
+					img{
+						display: block;
+						width: auto;
+						&.social-icon{
+							height: 24px;
+						}
+						&.store-icon{
+							height: 28px;
+							@media (min-width: $screen-lg-min){
+								height: 32px;
+							}
+						}
+					}
+				}
+			}
+		}
+		ul.nav-list,
+		ul.nav-icon-list{
+			& + .nav-title{
+				margin-top: 12px;
+			}
+		}
+	}
+	.site-footer_company-info{
+		text-align: center;
+		padding: 24px 0;
+		@media (min-width: $screen-md-min){
+			padding: 32px 0;
+			text-align: left;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		.ci_title{
+			margin: 0 0 8px;
+			font-size: 18px;
+			color: $grey900;
+		}
+		.ci_subtitle{
+			margin: 3px 0;
+			line-height: 16px;
+			font-size: 12px;
+			color: $grey600;
+		}
+		.company-register-badge{
+			text-align: center;
+			padding: 0 16px;
+			margin-top: 16px;
+			@media (min-width: $screen-md-min){
+				margin-top: 0;
+			}
+			img{
+				width: 180px;
+			}
+		}
+	}
+}
+
+
+
+
+.site-bottom_hotline{
+	display: block;
+	position: fixed;
+	bottom: 24px;
+	right: 12px;
+	z-index: 1010;
+	// showup
+	@include translateX(9999px);
+	opacity: 0;
+	@include transition(opacity .2s ease-in-out);
+	&.show-up{
+		@include translateX(0);
+		opacity: 1;
+	}
+	span{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.hotline-group{
+		position: relative;
+		display: inline-block;
+		color: #fff;
+		background-color: $green500;
+		border-radius: 4px;
+		padding: 3px 9px 3px 24px;
+		@media (min-width: $screen-md-min){
+			display: block;
+		}
+		&:hover, &:active, &:focus{
+			text-decoration: none;
+		}
+		.hotline-icon{
+			position: absolute;
+			top: -4px; left: -19px;
+			width: 38px;
+			height: 38px;
+			padding: 3px;
+			font-size: 16px;
+			text-align: center;
+			color: #fff;
+			background-color: $green500;
+			border-radius: 50%;
+			@include transition(background-color .1s ease-in-out);
+		i{
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			font-size: 16px;
+			text-align: center;
+			border: 1px solid rgba(#fff,.6);
+			border-radius: 50%;
+			background-image: url("../img/hotline-icon.png");
+			background-size: 20px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+		}
+		}
+		.hotline-label{
+			margin: 3px 3px 0 0;
+			line-height: 18px;
+			font-size: 12px;
+			font-weight: 700;
+			color: $grey100;
+		}
+		.hotline-number{
+			line-height: 24px;
+			font-size: 18px;
+			color: #fff;
+		}
+		// @media (min-width: $screen-md-min){
+		// 	&:hover{
+		// 		background-color: $green800;
+		// 		.hotline-icon{
+		// 			background-color: $green800;
+		// 		}
+		// 	}
+		// }
+	}	
+}

@@ -1,0 +1,40 @@
+.theme-color_primary_background { background-color: #AFB42B !important; }
+
+.theme-color_primary_text { color: #AFB42B !important; }
+
+.theme-color_primary_border { border-color: #AFB42B !important; }
+
+a { color: #AFB42B; }
+a, a:hover, a:focus, a:active, a:visited { color: #AFB42B; }
+a.h-c:hover { color: #AFB42B !important; }
+
+@media (min-width: 992px) { #siteHeader .sh_main-navbar { background-color: #AFB42B; } }
+
+ul.ht-breadcrumb > li ul li a:hover { color: #AFB42B; }
+ul.ht-breadcrumb > li:hover > a:hover { color: #AFB42B; }
+
+ul.ht-subcat-list > li ul li a:hover { color: #AFB42B; }
+ul.ht-subcat-list > li:hover > a:hover { color: #AFB42B; }
+
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus { background-color: #AFB42B; }
+
+.theme_style_button { background-color: #AFB42B; }
+
+.ht-product-card .product_price .pp_current-price { color: #AFB42B; }
+
+.ht-news-card .news-title a:hover { color: #AFB42B; }
+
+.ht-sidebar-card ul.sidebar-cat-list > li ul li a:hover { color: #AFB42B; }
+.ht-sidebar-card ul.sidebar-cat-list > li:hover > a:hover { color: #AFB42B !important; }
+.ht-sidebar-card ul.sidebar-cat-selecting-list li label input[type="checkbox"]:checked + .cat-select-icon, .ht-sidebar-card ul.sidebar-cat-selecting-list li label input[type="radio"]:checked + .cat-select-icon { color: #AFB42B; }
+.ht-sidebar-card ul.sidebar-cat-selecting-list li label input[type="checkbox"]:checked + .cat-select-icon + .cat-select-label, .ht-sidebar-card ul.sidebar-cat-selecting-list li label input[type="radio"]:checked + .cat-select-icon + .cat-select-label { color: #AFB42B; }
+
+.ht-single-option-w-preview label input:checked + .preview-option { border-color: #AFB42B; }
+.ht-single-option-w-preview label input:checked + .preview-option:after { border-color: transparent transparent #AFB42B transparent; }
+.ht-single-option-w-preview label input:checked + .preview-option .label-text { border-color: #AFB42B; }
+
+.has-slick-arrow-type-01 .slick-arrow { background-color: #AFB42B; }
+
+.ht-sidebar-card ul.sidebar-cat-list li.active > a { color: #AFB42B; }
+
+.category-title-items-list .single-category.active { border-color: #AFB42B; }

@@ -1,0 +1,98 @@
+// ====
+// Variables
+// ====
+
+
+// --
+// screens
+
+$screen-xs:         480px !default;
+$screen-xs-min:     $screen-xs !default;
+$screen-sm:         768px !default;
+$screen-sm-min:     $screen-sm !default;
+$screen-md:         992px !default;
+$screen-md-min:     $screen-md !default;
+$screen-lg:         1200px !default;
+$screen-lg-min:     $screen-lg !default;
+$screen-xl: 				1440px;
+$screen-xl-min:     $screen-xl !default;
+
+$screen-xs-max:			($screen-sm-min - 1) !default;
+$screen-sm-max:			($screen-md-min - 1) !default;
+$screen-md-max:			($screen-lg-min - 1) !default;
+$screen-lg-max:			($screen-xl-min - 1) !default;
+
+// @media (min-width: $screen-xs-min){}
+// @media (min-width: $screen-sm-min){}
+// @media (min-width: $screen-md-min){}
+// @media (min-width: $screen-lg-min){}
+// @media (min-width: $screen-xl-min){}
+
+
+// --
+// text
+
+$font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size: 14px;
+$font-weight: 400;
+$line-height: 19px;
+
+
+// --
+// colors
+
+$grey50 : material-color('grey','50');;
+$grey100: material-color('grey','100');
+$grey200: material-color('grey','200');
+$grey300: material-color('grey','300');
+$grey400: material-color('grey','400');
+$grey500: material-color('grey','500');
+$grey600: material-color('grey','500');
+$grey700: material-color('grey','600');
+$grey800: material-color('grey','700');
+$grey900: material-color('grey','800');
+
+$blue50 : material-color('blue','50');
+$blue100: material-color('blue','100');
+$blue200: material-color('blue','200');
+$blue300: material-color('blue','300');
+$blue400: material-color('blue','400');
+$blue500: material-color('blue','500');
+$blue600: material-color('blue','500');
+$blue700: material-color('blue','600');
+$blue800: material-color('blue','700');
+$blue900: material-color('blue','800');
+
+$green50 : material-color('green','50');
+$green100: material-color('green','100');
+$green200: material-color('green','200');
+$green300: material-color('green','300');
+$green400: material-color('green','400');
+$green500: material-color('green','500');
+$green600: material-color('green','500');
+$green700: material-color('green','600');
+$green800: material-color('green','700');
+$green900: material-color('green','800');
+
+$red50 : material-color('red','50');
+$red100: material-color('red','100');
+$red200: material-color('red','200');
+$red300: material-color('red','300');
+$red400: material-color('red','400');
+$red500: material-color('red','500');
+$red600: material-color('red','500');
+$red700: material-color('red','600');
+$red800: material-color('red','700');
+$red900: material-color('red','800');
+
+$color: $grey900;
+$bg-color: $grey100;
+
+
+
+// --
+// dividers
+
+$border-color: #eaeaea;
+
+$border: 1px solid $border-color;

@@ -1,0 +1,259 @@
+.ht-qna-section{
+	
+	.section-header{
+		padding: 0 0 12px;
+		border-bottom: $border;
+	}
+	.section-content{
+		padding: 12px 0;
+	}
+	.left-col{
+		margin-bottom: 48px;;
+		@media (min-width: $screen-sm-min){
+			flex: 0 0 40%;
+			min-width: 0;
+			margin: 0;
+			padding: 0 12px 0 0;
+			border-right: $border;
+		}
+	}
+	.right-col{
+		@media (min-width: $screen-sm-min){
+			flex: 1 1 auto;
+			min-width: 0;
+			padding: 0 0 0 12px;
+		}
+	}
+
+	.qna-section-heading{
+		padding: 4px 0;
+		.section-title{
+			margin: 0;
+			padding: 0;
+			line-height: 30px;
+			font-size: 24px;
+		}
+	}
+	.qna-section-nav{
+		
+	}
+	.qna-section-content,
+	.qna-section-nav{
+		@media (min-width: $screen-sm-min){
+			display: flex;
+		}
+	}
+	.qna-category-form{
+		.form-group{
+			position: relative;
+			margin: 0;
+		}
+	}
+	.qna-search-form{
+		.form-group{
+			position: relative;
+			margin: 0;
+			.form-control{
+				padding-left: 36px;
+			}
+			.form-icon{
+				position: absolute;
+				top: 0; left: 0;
+				display: block;
+				height: 34px;
+				width: 34px;
+				line-height: 34px;
+				font-size: 14px;
+				text-align: center;
+				color: $grey500;
+				background-color: transparent;
+			}
+			.form-suggested-list{
+				position: absolute;
+				top: 100%; right: 0; left: 0;
+				list-style: none;
+				padding: 4px 0;
+				margin: 0;
+				background-color: #fff;
+				z-index: 110;
+				box-shadow: 0 2px 5px 0 rgba(#000,.2);
+				border: 1px solid #eee;
+				li{
+					a{
+						display: block;
+						padding: 4px 12px;
+						line-height: 18px;
+						font-weight: 400;
+						font-size: 13px;
+						color: $grey700;
+						&:hover, &:active, &:focus{
+							text-decoration: none;
+						}
+						&:hover{
+							background-color: $grey100;
+						}
+					}
+					&.active{
+						a{
+							color: $grey900;
+							background-color: $grey100;
+						}
+					}
+				}
+
+			}
+		}
+	}
+
+	// 
+	.qna-list-question_heading{
+		margin: 0 -6px 12px;
+		padding: 8px;
+		background-color: $grey100;
+		border-radius: 2px;
+		.list-title{
+			margin: 0;
+			line-height: 14px;
+			font-size: 11px;
+			font-weight: 600;
+			color: $grey500;
+			text-transform: uppercase;
+		}
+		.list-count{
+			line-height: 14px;
+			font-size: 11px;
+			color: $grey600;
+		}
+	}
+	.qna-list-questions{
+		.qna-single-question{
+			display: block;
+			padding-bottom: 8px;
+			margin-bottom: 8px;
+			color: $grey900;
+			border-bottom: $border;
+			&:hover, &:focus, &:active{
+				text-decoration: none;
+			}
+			.qna-sq_question-title{
+				line-height: 18px;
+				font-size: 14px;
+				color: $grey900;
+			}
+			.qna-sq_question-infos{
+				margin-top: 4px;
+				font-size: 12px;
+				color: $grey500;
+				.qi_single-info{
+					line-height: 16px;
+				}
+			}
+			&:hover{
+				.qna-sq_question-title{
+					color: $blue500;
+				}
+				.qna-sq_question-infos{
+					color: $blue300;
+				}
+			}
+			&.active{
+				.qna-sq_question-title{
+					color: $blue700;
+				}
+				.qna-sq_question-infos{
+					color: $blue400;
+				}
+			}
+		}
+	}
+	.qna-list-questions-end{
+		margin-top: 24px;
+		text-align: center;
+		font-size: 12px;
+	}
+
+
+	.qna-answers{
+		.qna-answers_title{
+			margin: 0;
+			line-height: 30px;
+			font-size: 24px;
+		}
+		.answers_list-title{
+			margin: 0 0 12px;
+			line-height: 24px;
+			font-size: 18px;
+		}
+		.qna-answers_meta{
+			margin-top: 8px;
+			line-height: 16px;
+			font-size: 0;
+			span{
+				display: inline-block;
+				vertical-algin: top;
+				line-height: 16px;
+				font-size: 12px;
+				color: $grey600;
+				&:after{
+					display: inline-block;
+					content: "\2022";
+					line-height: 16px;
+					font-size: 8px;
+					color: $grey400;
+					padding: 0 4px;
+				}
+				&:last-child{
+					&:after{
+						display: none;
+					}
+				}
+			}
+			.qna-answers_content{
+				p{
+					margin-bottom: 8px;
+				}
+			}
+		}
+		.qna-answers_attachments{
+			.list-attachments{
+				font-size: 0;;
+				.single-attachment{
+					margin: 0 8px 8px 0;
+					display: inline-block;
+					vertical-align: top;
+					padding: 2px;
+					border: 1px solid #eee;
+					border-radius: 2px;
+					img{
+						display: block;
+						width: 128px;
+						height: 128px;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+		.qna-answers_links{
+
+		}
+		.qna-answers_tags{
+			.list-tags{
+				font-size: 0;
+				.single-tag{
+					margin: 0 4px 4px 0;
+					display: inline-block;
+					vertical-align: top;
+					padding: 4px 8px;
+					line-height: 18px;
+					font-size: 13px;
+					border-radius: 2px;
+					color: $grey900;
+					background-color: $grey200;
+					&:hover, &:active, &:focus{
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}

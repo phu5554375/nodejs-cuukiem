@@ -1,0 +1,160 @@
+
+
+// --
+// single product
+.ht-single-product-section{
+	.sp_info_section{
+		//
+	}
+	.sp_product-photo{
+		@media (max-width: $screen-xs-max){
+			margin-bottom: 24px;
+		}
+		.sp_product-photo_photo-view{
+			.sp_product-photo_photo-view_img{
+				display: block;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+		.sp_product-photo_list-thumbnails{
+			.sp_product-photo_single-thumbnail{
+				display: block;
+				border: 2px solid #eee;
+				padding: 1px;
+				.ht-inner{
+					@include transition(opacity .1s ease-in-out);
+				}
+				&:hover{
+					.ht-inner{
+						opacity: .85;
+					}
+				}
+				&.active{
+					border-color: $grey500;
+				}
+				img{
+					display: block;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+		.ht-product-photo-thumbnails-slick{
+			margin: 0 -2px 0 -4px;
+			.single-col{
+				padding: 0 4px;
+			}
+		}
+	}
+	.sp_info{
+		@media (min-width: $screen-md-min){
+			padding-left: 12px;
+		}
+		.sp_info-title{
+			margin: 0 0 12px;
+			line-height: 26px;
+			font-size: 20px;
+		}
+		.sp_product-price{
+			span{
+				display: inline-block;
+				vertical-align: top;
+			}
+			.sp_pp_current{
+				line-height: 36px;
+				font-size: 28px;
+				font-weight: 700;
+				color: $grey900;
+			}
+			.sp_pp_old{
+				margin: 8px 0 0 16px;
+				line-height: 20px;
+				font-size: 14px;
+				color: $grey600;
+				text-decoration: line-through;
+			}
+		}
+		.sp_product-image-code{
+			.single-image-code{
+				.download-image-code{
+					display: block;
+					position: relative;
+				}
+			}
+		}
+	}
+	.sp_description{
+		.sp_description_content{
+			& > * {
+				&:first-child{
+					margin-top: 0 !important;
+				}
+			}
+			h1,.h1{
+				margin: 24px 0 16px;
+				line-height: 36px;
+				font-size: 28px;
+			}
+			h2,.h2{
+				margin: 24px 0 16px;
+				line-height: 30px;
+				font-size: 24px;
+			}
+			h3,.h3{
+				margin: 16px 0 12px;
+				line-height: 24px;
+				font-size: 18px;
+			}
+			h4,.h4{
+				margin: 16px 0 12px;
+				line-height: 22px;
+				font-size: 16px;
+			}
+			h5,.h5{
+				margin: 12px 0 8px;
+				line-height: 19px;
+				font-size: 14px;
+			}
+			h6,.h6{
+				margin: 12px 0 8px;
+				line-height: 16px;
+				font-size: 12px;
+			}
+			ul{
+				padding-left: 24px; 
+			}
+			img{
+				max-width: 100% !important;
+			}
+		}
+		&.has-view-more-action{
+			#productDescriptionCollapse{
+				&.content-collapse{
+					position: relative;
+					height: 700px;
+					overflow: hidden;
+					&:after{
+						position: absolute;
+						content: "";
+						bottom: 0; left: 0; right: 0;
+						height: 150px;
+						background: rgba(255,255,255,0);
+						background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+						background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,1)));
+						background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+						background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+						background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+						background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+					}
+				}
+			}
+			.product-detail-collapse-btn-wrap{
+				margin-top: 24px;
+			}
+		}
+	}
+}
