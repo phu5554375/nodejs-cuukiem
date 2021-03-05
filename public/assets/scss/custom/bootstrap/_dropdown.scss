@@ -1,0 +1,13 @@
+.dropdown-menu {
+	padding: 5px 0;
+	> li > a {
+    display: block;
+    padding: 3px 12px;
+    line-height: 18px;
+    font-size: 13px;
+  }
+  .divider {
+  	margin: 5px 0;
+		background-color: $border-color;
+  }
+}

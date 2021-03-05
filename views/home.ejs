@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cửu kiếm chi vương</title>
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="iShopGo Default Template">
+	<meta name="author" content="Hiep Ta - iShopGo Design Team">
+	<meta name="copyright" content="iShopGo">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon_16.ico"/>
+  <link rel="bookmark" href="assets/img/favicon_16.ico"/>
+	<!-- CSS: Libs-->
+	<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/libs/ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="assets/libs/select2/css/select2.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css">
+	<link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="assets/libs/slick/slick.css">
+	<!-- <link rel="stylesheet" href="assets/libs/slick/slick-theme.css"> -->
+	<!-- CSS: Main -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/theme.css">
+
+	<!--[if lt IE 9]>
+  	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<div id="siteContainer">
+		<!-- site header -->
+		<header id="siteHeader" class="site-header fix-on-top">
+			
+			<div class="sh_toggle-btn">
+				<button class="sh_main-navbar_toggle navbar-toggle collapsed" data-toggle="collapse" data-target="#siteHeaderNavbarCollapse" aria-expanded="false"><i class="ion-navicon"></i></button>
+			</div>
+			<div class="logo flex">
+				<div class="left-top">
+					<a href="#">
+					 <img src="assets/img/icon-512.png">
+					</a>
+					
+				</div>
+				<div class="right-top">
+					<a href="#"><img src="assets/img/Group69.png"></a>
+					<a href="#"><img src="assets/img/Group68.png"></a>
+				</div>
+				
+			</div>
+			<div class="collapse navbar-collapse" id="siteHeaderNavbarCollapse">
+				<div class="sh_main-navbar">
+					<div class="container">
+						<div class="sh_main-navbar_wrapper">
+							<ul class="sh_main-nav-list">
+								<li><a href="/">Trang chủ</a></li>
+								<li><a href="/event">Sự kiện</a></li>
+								<li><a href="/camnang">Cẩm nang</a></li>
+								<li><a href="#">Thư viện</a></li>
+								<li><a href="https://www.facebook.com/cuukiemchivuong">Fanpage</a></li>
+								<li><a href="#">Kênh hỗ trợ</a></li>
+							</ul>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+		<!-- END site header -->
+
+		<!-- site name h1: for SEO, Home Page Only -->
+		<!-- <h1 class="hidden">Site Name Goes here</h1> -->
+		<!-- END -->
+
+		<!-- site content -->
+		<div id="siteContent" class="site-content">
+			
+		<div class="zone1 section">
+			<div class="section__background">
+				<video autoplay muted loop id="myVideo">
+					<source src="video/bg-video-ckcv.mp4" type="video/mp4">
+				  </video>				
+			</div>
+			
+				<div class="ct-tophead">
+					<div class="container has-mw-on-xs-screen">
+					<div class="col-md-4 col-xs-12">
+						<div class="ht-home-single-section ht-home-carousel-section mb-12 ">
+							<div class="section-content">
+								<div class="ht-item-slick ht-home-carousel-card-slick has-slick-arrow-type-01">
+									<div class="single-col">
+										<a href="#" class="ht-carousel-item-card block">
+											<div class="ht-rectangle ratio-31 bg-color-grey-200">
+												<div class="ht-inner">
+													<img src="assets/img/Bannersmall.png" alt="" class="w-100pct h-100pct ojf-cover">
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="single-col">
+										<a href="#" class="ht-carousel-item-card block">
+											<div class="ht-rectangle ratio-31 bg-color-grey-200">
+												<div class="ht-inner">
+													<img src="assets/img/Bannersmall.png" alt="" class="w-100pct h-100pct ojf-cover">
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="single-col">
+										<a href="#" class="ht-carousel-item-card block">
+											<div class="ht-rectangle ratio-31 bg-color-grey-200">
+												<div class="ht-inner">
+													<img src="assets/img/Bannersmall.png" alt="" class="w-100pct h-100pct ojf-cover">
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="panel with-nav-tabs panel-default">
+							<div class="panel-heading">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#tab1default" data-toggle="tab">Tin tức</a></li>
+										<li><a href="#tab2default" data-toggle="tab">Sự kiện</a></li>
+									</ul>
+							</div>
+							<div class="panel-body">
+								<div class="tab-content">
+									<div class="tab-pane fade in active" id="tab1default">
+										<ul>
+											<% data.rows.forEach(function(item){ %>
+											<li><a href="/contentevent/<%= item.id %>"><%= item.tieude %></a></li>
+											<%})%>
+											
+											
+										</ul>
+									</div>
+									<div class="tab-pane fade" id="tab2default">
+										<ul>
+											<% data.rows.forEach(function(item){ %>
+											<li><a href="/contentevent/<%= item.id %>"><%= item.tieude %></a></li>
+											<%})%>
+											
+											
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12 flex-mb">
+						<img class="top-img" src="assets/img/Group 38.png">
+						<img  class="top-img" src="assets/img/Group 39.png">
+					</div>
+				</div>
+			</div>
+			</div>
+			<div class="section ht-home-logo-brands-section py-12">
+				<div class="section__background">
+					<img alt="" class="desktop lazyloaded" src="assets/img/aha.png">
+					
+				</div>
+				<div class="container">
+				<div class="section-content">
+					<div class="col-md-3 col-xs-6">
+						<h3>Bí kíp 1</h3>
+						<ul>
+							<% data.rows.forEach(function(item){ %>
+								<li><a href="/contentevent/<%= item.id %>"><%= item.tieude %></a></li>
+								<%})%>
+							
+						</ul>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<h3>Bí kíp 2</h3>
+						<ul>
+							<li><a>Võ hùng bái sơn</a></li>
+							<li><a>Cảnh thí luyện</a></li>
+							<li><a>Kim vân lâu</a></li>
+							<li><a>Bắt lưu khấu</a></li>
+							<li><a>Tuyên chiến bang</a></li>
+							<li><a>Trừ ma ngũ bá</a></li>
+							<li><a>Hư sinh tuyệt cảnh</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<h3>Bí kíp 3</h3>
+						<ul>
+							<li><a>Võ hùng bái sơn</a></li>
+							<li><a>Cảnh thí luyện</a></li>
+							<li><a>Kim vân lâu</a></li>
+							<li><a>Bắt lưu khấu</a></li>
+							<li><a>Tuyên chiến bang</a></li>
+							<li><a>Trừ ma ngũ bá</a></li>
+							<li><a>Hư sinh tuyệt cảnh</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-xs-6">
+						<h3>Bí kíp 4</h3>
+						<ul>
+							<li><a>Võ hùng bái sơn</a></li>
+							<li><a>Cảnh thí luyện</a></li>
+							<li><a>Kim vân lâu</a></li>
+							<li><a>Bắt lưu khấu</a></li>
+							<li><a>Tuyên chiến bang</a></li>
+							<li><a>Trừ ma ngũ bá</a></li>
+							<li><a>Hư sinh tuyệt cảnh</a></li>
+						</ul>
+					</div>
+				</div>
+				</div>		
+			</div>
+			<div class="home-single-section ht-homebp-section">
+				<div class="section-content">
+					<div class="ht-item-slick ht-home-carousel-card-slick has-slick-arrow-type-01">
+						<div class="single-col">
+							<a href="#" class="ht-carousel-item-card block">
+								<div class="ht-rectangle ratio-31 bg-color-grey-200">
+									<div class="ht-inner">
+										<img src="assets/img/dote.png" alt="" class="w-100pct h-100pct ojf-cover">
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="single-col">
+							<a href="#" class="ht-carousel-item-card block">
+								<div class="ht-rectangle ratio-31 bg-color-grey-200">
+									<div class="ht-inner">
+										<img src="assets/img/thusinh.png" alt="" class="w-100pct h-100pct ojf-cover">
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="single-col">
+							<a href="#" class="ht-carousel-item-card block">
+								<div class="ht-rectangle ratio-31 bg-color-grey-200">
+									<div class="ht-inner">
+										<img src="assets/img/thuonglinh.png" alt="" class="w-100pct h-100pct ojf-cover">
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+					
+			</div>
+			<div class="section home-single-section ht-video-section ">
+				<div class="section__background">
+					<img alt="" class="desktop lazyloaded" src="assets/img/Group33.png">
+				</div>
+				<div class="section-content py-12 my-16">
+					<div class="container">
+						<div class="col-md-4 col-xs-6 pd-10"><iframe width="100%" height="215" src="https://www.youtube.com/embed/xCvdtS0h46U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="col-md-4 col-xs-6 pd-10"><iframe width="100%" height="215" src="https://www.youtube.com/embed/xCvdtS0h46U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="col-md-4 col-xs-6 pd-10"><iframe width="100%" height="215" src="https://www.youtube.com/embed/xCvdtS0h46U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="col-md-4 col-xs-6 pd-10"><iframe width="100%" height="215" src="https://www.youtube.com/embed/xCvdtS0h46U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="col-md-4 col-xs-6 pd-10"><iframe width="100%" height="215" src="https://www.youtube.com/embed/xCvdtS0h46U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+						<div class="col-md-4 col-xs-6 pd-10"><iframe width="100%" height="215" src="https://www.youtube.com/embed/xCvdtS0h46U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+					</div>
+				</div>
+					
+			</div>
+		</div>
+		<!-- END site content -->
+
+		<!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="pa-20">
+        <div class="container">
+        	<div class="site-footer_company-info flex-item">
+        		<div class="company-info-wraper">
+	            <h4 class="ci_title">CÔNG TY CỔ PHẦN PHÁT TRIỂN KINH DOANH CÔNG NGHỆ ĐẠI HẢI</h4>
+	            <div class="ci_subtitle">Địa chỉ: Số 2 ngõ 136 phố Nguyễn An Ninh, Phường Tương Mai, Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam</div>
+	            <div class="ci_subtitle">Tổng đài: <b class="color-green-700">0784 022 333</b> (cả T7, CN) - Email: daihai.jsc.co@gmail.com</div>
+	           
+	          </div>
+	          <div class="company-register-badge flex-item">
+	            <!-- <img src="stock/icons/dathongbao-bocongthuong.png" alt=""> -->
+	          </div>
+        	</div>
+        </div>
+      </div>
+        
+    </footer>
+    <!-- END Site Footer -->
+
+	</div>
+	<div class="vivu-widget-call-action">
+		<a href="#" class="vivu-widget-btn-call">
+			<img src="assets/img/Group84.png">
+		</a>
+		<a href="#" class="vivu-widget-btn-call">
+			<img src="assets/img/Group85.png">
+			
+		</a>
+	</div>
+	<div class="vivu-widget-all-app-act-pc">
+		<div class="vivu-widget-btn-act-call">
+			<a href="http://cuukiemchivuong.vn/" class="vivu-widget-btn-open-popup-call">
+				<img alt="nạp thẻ" class="vivu-widget-btn-img-call" src="assets/img/nap-the 1.png">
+                
+            </a>
+		</div>
+		
+		<div class="vivu-widget-btn-act-zalo">
+			<a href="#" target="_blank" href="https://zalo.me/0972688622">
+				<img alt="zalo" class="vivu-widget-btn-img-zalo" src="assets/img/tai-APK 1.png">
+                
+            </a>
+		</div>
+		
+		<div class="vivu-widget-btn-act-mess">
+			<a href="#" target="_blank" href="https://m.me/azvay.bank">
+				<img alt="facebook" class="vivu-widget-btn-img-mess" src="assets/img/Google Play.png">
+               
+            </a>
+		</div>
+		
+		<div class="vivu-widget-btn-act-location">
+            <a href="#" target="_blank" rel="nofollow" href="https://g.page/daohan-azvay">
+				<img alt="Bản đồ" class="vivu-widget-btn-img-location" src="assets/img/App Store.png">
+             
+            </a>
+		</div>
+		<!-- <div class="swing"><img src="assets/img/image6.png"></div> -->
+		
+	</div>
+
+
+	<!-- JS: Libs -->
+	<script src="assets/libs/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+	<script src="assets/libs/select2/js/select2.full.min.js"></script>
+	<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+	<script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+	<script src="assets/libs/fancybox/jquery.fancybox.min.js"></script>
+	<script src="assets/libs/slick/slick.min.js"></script>
+	<!-- JS: Main -->
+	<script src="assets/js/main.js"></script>
+
+	<!-- custom JS -->
+	<script>
+		$(document).ready(function(){
+
+		  // select2
+		  $('.select2-form-control').select2();
+		  // datepicker
+		  $('.datepicker-form-control').datepicker({
+		    orientation: "bottom"
+		  });
+		  // touchspin
+		  $('.touchspin-form-control').TouchSpin({
+		    // 
+		  });
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quản trị cửu kiếm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/theme.css">
+</head>
+<body>
+
+<div class="container">
+  <form action="/logout?_method=DELETE" method="POST">
+    <!-- <button type="submit">Log Out</button> -->
+  </form>
+  <h3 class="head-admin text-center">Cửu kiếm chi vương</h3>
+  <div class="panel with-nav-tabs panel-default">
+    <div class="panel-heading">
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1default" data-toggle="tab">Sự kiện</a></li>
+                <li><a href="#tab2default" data-toggle="tab">Cẩm nang</a></li>
+                
+            </ul>
+    </div>
+    <div class="panel-body">
+        <div class="tab-content">
+            <div class="tab-pane fade in active" id="tab1default">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Tiêu đề</th>
+                    <th>Mô tả</th>
+                    <th>Hình ảnh</th>
+                    <th>Nội dung</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% data.rows.forEach(function(item){ %>
+                  <tr>
+                    <td><%= item.id %></td>
+                    <td><%= item.tieude %></td>
+                    <td><%= item.mota %></td>
+                    <td><img width="200px" src="../uploads/<%= item.image %>"></td>
+                    <td><%= item.noidung %></td>
+                    <td>
+                      --<a onclick="return confirm('bạn muốn xóa')" href="/delete/<%= item.id %>">Xóa</a>
+                      <a href="/edit/<%= item.id %>">edit</a>
+                      --<a href="/add">Thêm</a></td>
+                  </tr>
+
+                  <%})%>
+                </tbody>
+                --<a href="/add">Thêm</a></td>
+              </table>
+            </div>
+            <div class="tab-pane fade" id="tab2default">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Tiêu đề</th>
+                    <th>Mô tả</th>
+                    <th>Hình ảnh</th>
+                    <th>Nội dung</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% data.rows.forEach(function(item){ %>
+                  <tr>
+                    <td><%= item.id %></td>
+                    <td><%= item.tieude %></td>
+                    <td><%= item.mota %></td>
+                    <td><img width="200px" src="../uploads/<%= item.image %>"></td>
+                    <td><%= item.noidung %></td>
+                    <td>
+                      --<a onclick="return confirm('bạn muốn xóa')" href="/delete/<%= item.id %>">Xóa</a>
+                      <a href="/edit/<%= item.id %>">edit</a>
+                      --<a href="/add">Thêm</a></td>
+                  </tr>
+                  <%})%>
+                </tbody>
+              </table>
+            </div>
+           
+        </div>
+    </div>
+</div>
+  
+  
+</div>
+
+</body>
+</html>

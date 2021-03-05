@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Quản trị cửu kiếm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+	<link rel="stylesheet" href="/assets/css/theme.css">
+  <script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+<h3 class="head-admin text-center">Thêm tin tức</h3>
+    <form action="add" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label>Tiêu đề</label>
+          <input type="text" class="form-control" id="tieude" name="tieude">
+        </div>
+        <div class="form-group">
+          <label>Mô tả</label>
+          <input type="text" class="form-control" id="mota" name="mota">
+        </div>
+        <div class="form-group">
+          <label>Hình ảnh</label>
+          <input type="file" class="form-control" id="uploadfile" name="uploadfile">
+        </div>
+        <textarea name="noidung" id="noidung"></textarea>
+          <script>
+              CKEDITOR.replace( 'noidung' );
+          </script>
+    
+    <button type="submit" class="ma-0 btn btn-default">Thêm mới</button>
+  </form>
+     
+        </div>
+        <!-- <div class="form-group">
+          <label for="pwd">ảnh</label>
+          <input type="password" class="form-control" id="pwd">
+        </div> -->
+        
+        
+</div>
+
+</body>
+
+</html>

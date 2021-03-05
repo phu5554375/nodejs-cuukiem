@@ -1,0 +1,65 @@
+// Table
+
+$table-border: 1px solid #e0e0e0;
+
+table.table{
+  thead{
+    tr{
+      th{
+        font-weight: 500;
+      }
+    }
+  }
+}
+.table {
+	margin-bottom: 12px;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+      	line-height: 1.5;
+        border-top: $table-border;
+      }
+    }
+  }
+  > thead > tr > th {
+    vertical-align: middle;
+    border-bottom: $table-border;
+  }
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  > tbody + tbody {
+    border-top: $table-border;
+  }
+  .table {
+    background-color: transparent;
+  }
+}
+.table-bordered {
+  border: 1px solid $table-border;
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        border: $table-border;
+      }
+    }
+  }
+}
+.table-responsive {
+  @media screen and (max-width: $screen-xs-max) {
+    border: $table-border;
+  }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Cửu kiếm chi vương</title>
+	<!-- Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="description" content="iShopGo Default Template">
+	<meta name="author" content="Hiep Ta - iShopGo Design Team">
+	<meta name="copyright" content="iShopGo">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/img/favicon_16.ico" />
+	<link rel="bookmark" href="assets/img/favicon_16.ico" />
+	<!-- CSS: Libs-->
+	<link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="assets/libs/ionicons/css/ionicons.min.css">
+	<link rel="stylesheet" href="assets/libs/select2/css/select2.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css">
+	<link rel="stylesheet" href="assets/libs/fancybox/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="assets/libs/slick/slick.css">
+	<!-- <link rel="stylesheet" href="assets/libs/slick/slick-theme.css"> -->
+	<!-- CSS: Main -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/theme.css">
+
+	<!--[if lt IE 9]>
+  	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+	<div id="siteContainer">
+		<!-- site header -->
+		<header id="siteHeader" class="site-header fix-on-top">
+			<div class="sh_toggle-btn">
+				<button class="sh_main-navbar_toggle navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#siteHeaderNavbarCollapse" aria-expanded="false"><i class="ion-navicon"></i></button>
+			</div>
+			<div class="logo flex">
+				<div class="left-top">
+					<a href="#">
+						<img src="assets/img/icon-512.png">
+					</a>
+				</div>
+				<div class="right-top">
+					<a href="#"><img src="assets/img/Group69.png"></a>
+					<a href="#"><img src="assets/img/Group68.png"></a>
+				</div>
+			</div>
+			<div class="collapse navbar-collapse" id="siteHeaderNavbarCollapse">
+				<div class="sh_main-navbar">
+					<div class="container">
+						<div class="sh_main-navbar_wrapper">
+							<ul class="sh_main-nav-list">
+								<li><a href="/">Trang chủ</a></li>
+								<li><a href="/event">Sự kiện</a></li>
+								<li><a href="/contentevent">Cẩm nang</a></li>
+								<li><a href="#">Thư viện</a></li>
+								<li><a href="#">Fanpage</a></li>
+								<li><a href="#">Kênh hỗ trợ</a></li>
+							</ul>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</header>
+		<!-- END site header -->
+		<!-- site name h1: for SEO, Home Page Only -->
+		<!-- <h1 class="hidden">Site Name Goes here</h1> -->
+		<!-- END -->
+
+		<!-- site content -->
+		<div id="siteContent" class="site-content">
+
+			<div class="section bc-ari">
+				<div class="background">
+					
+				</div>
+				<div class="container">
+				<div class="ht-article-preview-wrap">
+					
+					  
+					<% data.rows.forEach(function(item){ %>
+						<div class="ht-article-preview-card ht-card ht-depth-1">
+							<div class="row">
+							  <div class="col-xs-3">
+								<div class="card-image">
+								  <a href="/contentevent/<%= item.id %>" class="image-wrap ht-rectangle ratio-32">
+									<div class="ht-inner ht-bgcover"><img src="../uploads/<%= item.image %>"></div>
+								  </a>
+								</div>
+							  </div>
+							  <div class="col-xs-9 px-4">
+								<div class="card-content">
+								  <h3 class="article-title"><a href="/contentevent/<%= item.id %>"><%= item.tieude %></a></h3>
+								 
+								  <div class="article-excerpt"><%= item.mota %>
+										  <a href="/contentevent/<%= item.id %>" class="iblock fz-12 h-udl">Xem thêm</a></div>
+								</div>
+							  </div>
+							</div>
+						  </div>
+					<%})%>
+				
+
+				  </div>
+				</div>
+				
+			</div>
+			<!-- END site content -->
+
+			<!-- Site Footer -->
+			<footer class="site-footer">
+				<div class="pa-20">
+					<div class="container">
+						<div class="site-footer_company-info flex-item">
+							<div class="company-info-wraper">
+								<h4 class="ci_title">CÔNG TY CỔ PHẦN PHÁT TRIỂN KINH DOANH CÔNG NGHỆ ĐẠI HẢI</h4>
+								<div class="ci_subtitle">Địa chỉ: Số 2 ngõ 136 phố Nguyễn An Ninh, Phường Tương Mai,
+									Quận Hoàng Mai, Thành phố Hà Nội, Việt Nam</div>
+								<div class="ci_subtitle">Tổng đài: <b class="color-green-700">0784 022 333</b> (cả T7,
+									CN) - Email: daihai.jsc.co@gmail.com</div>
+							</div>
+							<div class="company-register-badge flex-item">
+								<!-- <img src="stock/icons/dathongbao-bocongthuong.png" alt=""> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</footer>
+			<!-- END Site Footer -->
+
+		</div>
+		<div class="vivu-widget-call-action">
+			<a href="#" class="vivu-widget-btn-call">
+				<img src="/assets/img/Group84.png">
+			</a>
+			<a href="#" class="vivu-widget-btn-call">
+				<img src="/assets/img/Group85.png">
+
+			</a>
+		</div>
+		<div class="vivu-widget-all-app-act-pc">
+			<div class="vivu-widget-btn-act-call">
+				<a href="#" class="vivu-widget-btn-open-popup-call">
+					<img alt="nạp thẻ" class="vivu-widget-btn-img-call" src="/assets/img/nap-the 1.png">
+
+				</a>
+			</div>
+
+			<div class="vivu-widget-btn-act-zalo">
+				<a href="#" target="_blank" href="https://zalo.me/0972688622">
+					<img alt="zalo" class="vivu-widget-btn-img-zalo" src="/assets/img/tai-APK 1.png">
+
+				</a>
+			</div>
+
+			<div class="vivu-widget-btn-act-mess">
+				<a href="#" target="_blank" href="https://m.me/azvay.bank">
+					<img alt="facebook" class="vivu-widget-btn-img-mess" src="/assets/img/Google Play.png">
+
+				</a>
+			</div>
+
+			<div class="vivu-widget-btn-act-location">
+				<a href="#" target="_blank" rel="nofollow" href="https://g.page/daohan-azvay">
+					<img alt="Bản đồ" class="vivu-widget-btn-img-location" src="/assets/img/App Store.png">
+
+				</a>
+			</div>
+			<!-- <div class="swing"><img src="assets/img/image6.png"></div> -->
+
+		</div>
+
+
+		<!-- JS: Libs -->
+		<script src="/assets/libs/jquery.min.js"></script>
+		<script src="/assets/libs/bootstrap/js/bootstrap.js"></script>
+		<script src="/assets/libs/select2/js/select2.full.min.js"></script>
+		<script src="/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+		<script src="/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+		<script src="/assets/libs/fancybox/jquery.fancybox.min.js"></script>
+		<script src="/assets/libs/slick/slick.min.js"></script>
+		<!-- JS: Main -->
+		<script src="/assets/js/main.js"></script>
+
+		<!-- custom JS -->
+		<script>
+			$(document).ready(function () {
+
+				// select2
+				$('.select2-form-control').select2();
+				// datepicker
+				$('.datepicker-form-control').datepicker({
+					orientation: "bottom"
+				});
+				// touchspin
+				$('.touchspin-form-control').TouchSpin({
+					// 
+				});
+
+			});
+		</script>
+</body>
+
+</html>

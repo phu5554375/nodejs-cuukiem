@@ -1,0 +1,245 @@
+// Form
+
+label{
+  line-height: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  color: $grey700;
+}
+select{
+  cursor: pointer;
+  &.no-apr{
+    @include appearance(none);
+  }
+}
+input[type="radio"], 
+input[type="checkbox"] {
+  cursor: pointer;
+}
+textarea{
+  max-width: 100%;
+  &.form-control {
+    height: auto;
+  }
+}
+input,
+select,
+textarea{
+  &:focus{
+    outline: none !important;
+  }
+}
+.form-group {
+  position: relative;
+  margin-bottom: 12px;
+}
+.form-control{
+	display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 8px;
+  line-height: 20px;
+  vertical-align: top;
+  font-size: 14px;
+  border-color: #ccc;
+  border-radius: 2px;
+  @include transition(all .2s ease-in-out);
+  &.form-control-xs{
+    height: 26px;
+    padding: 4px 6px;
+    line-height: 16px;
+    font-size: 12px;
+  }
+  &.form-control-sm{
+    height: 30px;
+    padding: 4px 8px;
+    line-height: 20px;
+    font-size: 13px;
+  }
+  &.form-control-lg{
+    height: 38px;
+    padding: 7px 12px;
+    line-height: 22px;
+    font-size: 15px;
+  }
+  &:focus{
+    border-color: #999;
+  }
+  &.no-change-bdc-on-focus{
+    &:focus{
+      border-color: #ccc;
+    }
+  }
+}
+.form-control,
+.form-control:focus {
+  color: $grey900;
+  @include box-shadow(0 0 0 0 transparent);
+}
+.form-inline{
+  .form-group{
+    vertical-align: top;
+  }
+  .btn{
+    vertical-align: top;
+  }
+}
+
+// .input-group{
+//   vertical-align: top;
+// }
+.input-group-addon,
+.input-group-btn{
+  vertical-align: top;
+}
+.input-group-addon {
+  line-height: 20px;
+  padding: 6px 8px;
+  color: $grey700;
+  min-width: 34px;
+  font-size: 14px;
+  text-align: center;
+  background-color: $grey50;
+  &.input-group-addon-size-xs{
+    min-width: 26px;
+    line-height: 16px;
+    padding: 4px 6px;
+    font-size: 12px;
+  }
+  &.input-group-addon-size-sm{
+    min-width: 30px;
+    line-height: 18px;
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+  &.input-group-addon-size-lg{
+    min-width: 38px;
+    line-height: 22px;
+    padding: 7px 12px;
+    font-size: 15px;
+  }
+  i{
+    display: inline-block;
+    line-height: 16px;
+  }
+  // &.icon-addon{
+  // 	padding: 0;
+  // 	i{
+  //     display: inline-block;
+  //     padding: 0;
+  //     line-height: 32px;
+  //     vertical-align: top;
+  //     width: 34px;
+  //     text-align: center;
+  //     color: $grey700;
+  //   }
+  //   &.icon-xs{
+  //     width: 26px;
+  //     i{
+  //       font-size: 12px;
+  //     }
+  //   }
+  //   &.icon-sm{
+  //     i{
+  //       width: 30px;
+  //       font-size: 13px;
+  //     }
+  //   }
+  //   &.icon-lg{
+  //     i{
+  //       width: 48px;
+  //       font-size: 18px;
+  //     }
+  //   }
+  // }
+}
+.input-group-btn{
+  .btn{
+    min-width: 34px;
+    border-radius: 0;
+    &.ht-btn-default{
+      border-color: #ccc;
+    }
+  }
+  &.input-group-btn-size-sm{
+    height: 30px;
+  }
+  &:first-child{
+    .btn{
+      border-radius: 2px 0 0 2px;
+    }
+  }
+  &:last-child{
+    .btn{
+      border-radius: 0 2px 2px 0;
+    }
+  }
+}
+.ht-form-text{
+	margin-top: 4px;
+	font-size: 14px;
+	// color: $color-hint-text;
+}
+.radio,
+.radio-inline,
+.checkbox,
+.checkbox-inline{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  input[type="radio"], 
+  input[type="checkbox"]{
+    margin-top: 4px;
+  }
+  label{
+    padding-top: 3px;
+    padding-bottom: 3px;
+    line-height: 20px;
+    font-size: 14px;
+   	color: $grey900;
+  }
+  &.disabled{
+  	label{
+  		color: $grey600;
+  	}
+  }
+}
+.radio-inline + .radio-inline, 
+.checkbox-inline + .checkbox-inline {
+  margin-left: 16px;
+}
+
+textarea.autoExpand{
+  // display: block;
+  // box-sizing: padding-box;
+  // overflow: hidden;
+
+  // padding: 10px;
+  // width: 250px;
+  // font-size: 14px;
+  // margin: 50px auto;
+  // border-radius: 6px;
+  // box-shadow: 2px 2px 8px rgba(black, .3);
+  // border: 0;
+}
+
+
+
+// webkit shadow remove
+
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="url"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+textarea {   
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;   
+}
+  
